@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+/*Link das Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 5px 90px;
+}
+
+.fa-user {
+  width: 20px;
+  height: 20px;
+}
+
+.fa-user:hover {
+  color: green;
+}
+
+body {
+  font-family: "Poppins", system-ui;
+}
+
+header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.281);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: #fff;
+  color: black;
+  padding: 8px 0;
+}
+
+ul {
+  list-style: none;
+  font-size: 15px;
+}
+
+li {
+  padding: 13px;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+}
+
+nav a:hover {
+  border-bottom: 2px solid rgb(10, 68, 10);
+  height: 70px;
+}
+
+#avatar_img {
+  width: 40px;
+  height: 40px;
+}
+
+#fa {
+  width: 60px;
+  margin-bottom: -30px;
+  height: 50px;
+}
+
+#fa:hover {
+  transform: translateX(10px);
+  color: rgb(10, 68, 10);
+}
+
+.imgg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#img1 {
+  width: 412px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
+}
+
+.sister {
+  display: flex;
+  gap: 5px;
+}
+
+#imgs {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+#imgs:hover {
+  border: 2px solid orange;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.dolar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+span {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(10, 68, 10);
+  color: white;
+  height: 30px;
+  width: 220px;
+  border-radius: 5px;
+  transition: all ease 3ms;
+}
+
+.card:hover {
+  background-color: rgb(21, 88, 0);
+}
+
+.text {
+  margin: 10px;
+  gap: 20px;
+}
+
+#desconto {
+  font-weight: bolder;
+}
+/* 
+.leonel {
+  background-image: url("images/4705350_CAM_CRM_GLOBAL_ADAPT_EU_MAINPACK_4_VIVIDHORIZON_FW_24_GLP_BANNER_HERO_MALE_DESKTOP_2880x1200_4da173f07b.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 530px;
+  padding-top: -10px;
+  background-attachment: fixed;
+} */
+
+#tex {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translateX(-40%, -40%);
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: antiquewhite;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#filho {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.categorias img {
+  width: 220px;
+  height: 230px;
+  transition: all ease-in 1s;
+}
+
+.categorias img:hover {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.xat {
+  text-align: center;
+  padding-top: 80px;
+  margin: 10px;
+}
+
+h4 {
+  text-align: center;
+}
+
+.samba {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.sba {
+  text-align: center;
+  padding-top: 100px;
+}
+
+video {
+  border-radius: 10px;
+}
+
+#btn {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(2, 94, 2);
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all ease 1s;
+}
+
+#btn:hover {
+  background-color: rgb(5, 52, 5);
+}
+
+#btn i {
+  margin-bottom: -39px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer h1 {
+  text-align: center;
+  margin: 20px 20px;
+}
+
+#adidas {
+  color: white;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
+
+marquee {
+  height: 90vh;
+  background-color: rgb(33, 33, 33);
+  width: 100%;
+  margin-top: 66px;
+}
+
+.stilos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 80px;
+  flex-wrap: nowrap;
+}
+
+.stilos img {
+  height: 400px;
+  width: 200px;
+  transition: all ease 1s;
+}
+
+.stilos img:hover {
+  width: 300px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+#estiloss {
+  text-align: center;
+  padding-top: 110px;
+}
+
+.stilos h4 {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.texting {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+}
+
+.texting img {
+  width: 300px;
+  height: 350px;
+  border: 1.5px solid yellow;
+}
+
+.texting p {
+  font-size: 15px;
+  text-align: justify;
+}
