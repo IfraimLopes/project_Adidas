@@ -3,65 +3,429 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Link das Animacões-->
+    <!--Link de Styles-->
+    <link rel="stylesheet" href="style.css" />
+
+
+    <!--Link dos icons-->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--Link do Favicon-->
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
-  
-    <!--Link do CSS-->
-    <link rel="stylesheet" href="style.css" />
-    <title>NIKE</title>
-  
+    <link
+      rel="shortcut icon"
+      href="images/baixados-removebg-preview (3).png"
+      type="image/x-icon"
+    />
+
+    <title>Adidas Samba</title>
   </head>
   <body>
-    <!--Área do cabeçalho-->
+    <!--Área do header-->
     <header>
       <nav>
-        <img src="img/icon.png" alt="icon_nike" class="animate__animated  animate__zoomIn" />
+        <img
+          id="icon"
+          src="images/baixados-removebg-preview (3).png"
+          alt="icon"
+        />
         <ul>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="#inicio" >Início</a></li>
         </ul>
         <ul>
-          <li><a href="#">Modelos</a></li>
+          <li><a href="#categorias">Categorias</a></li>
         </ul>
         <ul>
-          <li><a href="#">Novas Tendências</a></li>
+          <li><a href="#Sam">Samba</a></li>
         </ul>
+        <ul>
+          <li><a href="#estiloss">Style</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href="#Outros">Outros</a></li>
+        </ul>
+
+
+        <ul>
+          <li><a href="#comprar">Comprar</a></li>
+        </ul>
+        <div class="imgg">
+          <div><i id="fa" onclick="shopping()" class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+            <i id="botao1" onclick="user()" class="fa-solid fa-user"></i>
+          </div>
+        </div>
       </nav>
     </header>
-    
 
-    <!--Corpo do Site-->
-    <section>
-      <div class="NIKE " >
-        <h1 id="first" class="animate__animated animate__zoomInDown">NIKE</h1>
-      </div>
-      <img
-        src="img/Remove-bg.ai_1724536049259.png"
-        alt="Nike"
-        class="nikejordan animate__animated   animate__zoomInLeft" 
-      />
-   
-      <div class="text">
-        <h1 class="txt animate__animated animate__bounceInDown">NIKE Air Jordan</h1>
-        <p class="pa animate__animated  animate__fadeInLeft">
-          Os Air Jordans são uma das linhas de tênis mais <br />
-          icônicas e influentes no mundo do esporte e da moda. <br />Criados em
-          parceria entre Michael Jordan, <br />
-          um dos maiores jogadores de basquete de todos os tempos.
-        <div class="bottom animate__animated animate__flip">
-         <button class="red" onclick="pink()"></button>
-         <button class="pink" onclick="pink1()"></button>
-         <button class="green" onclick="pink3()"></button>
-         <button class="blue" onclick="pink4()"></button>
+    <!--Area Modal-->
+    <dialog>
+      <form action="##" method="post">
+        <div id="alpha">
+          <h1>Seja Bem-Vindo</h1>
+          <h3>Iniciar Sessão</h3>
+          <div id="nome">
+            <input
+              type="email"
+              placeholder="Digite o seu email"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div id="Password">
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Digite a sua password"
+            />
+          </div>
+          <div id="enviar">
+            <input onclick="ok()" type="button" value="Enviar" />
+          </div>
+          <div id="termos">
+            <input type="checkbox" name="gr" id="gr" />
+            <label for="gr">Aceitar Todos os termos</label>
+          </div>
+          <a href="#">Criar conta no sistema</a>
         </div>
-        </p>
+      </form>
+    </dialog>
+
+
+    <!--Área do Marqueee-->
+    <section class="alpha" id="inicio">
+      <marquee behavior="alternate" loop = "infinite"  direction="right">
+        <img src="images/4705350_CAM_CRM_GLOBAL_ADAPT_EU_MAINPACK_4_VIVIDHORIZON_FW_24_HP_BANNER_HERO_OPTION_1_DESKTOP_2880x1200_cd67ffde19.jpg" alt="img">
+        <img src="images/4705350_CAM_CRM_GLOBAL_ADAPT_EU_MAINPACK_4_VIVIDHORIZON_FW_24_GLP_BANNER_HERO_MALE_DESKTOP_2880x1200_4da173f07b.png" alt="imgg">
+        <img src="images/outdoor_fw24_terrex_adventure_wardrobe_launch_hike_hp_banner_hero_d_8fb0ca647a.jpg" alt="img">
+      </marquee>
+      <!--------------------------------------------->
+
+      <!--Texto que está Junto ao Marqueee-->
+      <div id="tex">
+        <h1>Bem-vindo a Loja Adidas</h1>
+        <h2>O melhor conforto você encontra aqui!!</h2>
+        <button type="button">Saber Mais</button>
       </div>
     </section>
+
+  
+
+
+    <!--Área de Categorias-->
+    <h1 class="xat" id="categorias">Categorias Sapatinhas</h1>
+    <section  class="categorias">
+      <div>
+        <img
+          src="images/sapatilhas_plus/Sapatilhas_com_Atacadores_Elasticos_Campus_00s_-_Crianca_Rosa_JH6328_02_standard_hover_hover.jpg"
+          alt=""
+        />
+        <h4>Sapatilha Campus</h4>
+        <button id="btn" onclick="shopping()" >    Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i></button>
+      
+        </button>
+      </div>
+      <div>
+        <img
+          src="images/categorias/Sapatilhas_Gazelle_-_Crianca_Rosa_IG9153_02_standard_hover.jpg"
+          alt="gizele"
+        />
+        <h4>Sapatinha Gazelle</h4>
+        <button id="btn" onclick="shopping()" > Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i></button>
+         
+        </button>
+      </div>
+      <div>
+        <img
+          src="images/categorias/Sapatilhas_Samba_OG_Preto_B75807_02_standard.jpg"
+          alt="samba"
+        />
+        <h4>Sapatilha Samba</h4>
+        <button id="btn" onclick="shopping()" > Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i></button>
+        
+      </div>
+
+      <div>
+        <img
+          src="images/categorias/Sapatos_Handball_Spezial_Azul_BD7633_02_standard_hover_hover_hover.png"
+          alt="spzial"
+        />
+        <h4>Sapatilha Spezial</h4>
+        <button id="btn" onclick="shopping()" >Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i>
+        </button>
+
+      </div>
+      <div>
+                <img
+          src="images/sapatilhas_plus/Sapatilhas_Handball_Spezial_Bege_IF6562_02_standard_hover_hover_hover_hover_hover_hover.jpg"
+          alt="spzial"
+        />
+        <h4>Sapatilha Spezial Bege</h4>
+        <button id="btn" onclick="shopping()" >Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+      <div>
+        <img
+          src="images/sapatilhas_plus/Sapatilhas_Gazelle_Indoor_Rosa_JI1371_04_standard.png"
+          alt="spzial"
+        />
+        <h4>Sapatilha Gazelle Rosa</h4>
+        <button id="btn" onclick="shopping()" >Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+
+      <div>
+        <img
+          src="images/sapatilhas_plus/Sapatilhas_Gazelle_Vermelho_IF9652_04_standard.png"
+          alt="spzial"
+        />
+        <h4>Sapatilha Gazelle Vermelho</h4>
+        <button id="btn" onclick="shopping()" >Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+
+      <div>
+        <img
+          src="images/sapatilhas_plus/Gazelle_Indoor_Shoes_Roxo_IH5483_04_standard.png"
+          alt="spzial"
+        />
+        <h4>Sapatilha Gazelle Roxo</h4>
+        <button id="btn" onclick="shopping()" >Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+
+    </section>
+    
+    <section class="tenis">
+        
+    </section>
+    <!-------Termina aqui--------->
+
+    <!--Área dos Videos pés-->
+    <h1 id="Sam" class="sba" >O conforto dos seus pés mora em nós</h1>
+    <section class="samba">
+      <div>
+        <video
+        
+        height="380"
+          width="400"
+          autoplay
+          controls
+          autoplay
+          loop
+          muted
+          preload="auto"
+          src="images/videossapatinas/Sapatilhas_Samba_OG_Branco_B75806_video.webm"
+        ></video>
+        <h4>Sapatinha Samba Branco</h4>
+        <button id="btn" onclick="shopping()" >
+          Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+
+      <div>
+        <video
+        
+        height="380"
+          width="400"
+          autoplay
+          controls
+          autoplay
+          loop
+          muted
+          preload="auto"
+          src="images/videossapatinas/Sapatilhas_Samba_OG_Preto_B75807_video.webm"
+        ></video>
+        <h4>Sapatinha Samba Preto</h4>
+        <button id="btn" onclick="shopping()" >          Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i></button>
+
+      </div>
+
+      <div>
+        <video
+          height="380"
+          width="400"
+          autoplay
+          controls
+          autoplay
+          loop
+          muted
+          preload="auto"
+          src="images/videossapatinas/Sapatos_Handball_Spezial_Azul_BD7632_video.webm"
+        ></video>
+        <h4>Sapatinha Samba Spezial Azul</h4>
+        <button id="btn" onclick="shopping()" >
+          Comprar <i id="fa" class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </section>
+         <!--Termina aqui-->
+    
+    <!--As senhoras do Style-->
+    <h1 id="estiloss">O seu estilo é a nossa responsablidade</h1>
+    <section class="stilos">
+  
+    <div><img src="images/estilos/fw24_originals_shop_your_style_lookbook_plp_gallery_look_look_11_02_d_977457c6a9.png" alt="estilos"><h4>Estilo é arte</h4></div>
+
+    <div><img src="images/estilos/fw24_originals_shop_your_style_lookbook_plp_gallery_look_look_13_02_d_4b220af43e.jpg" alt="estlos"><h4>Estilo é arte</h4></div>
+
+    <div><img src="images/estilos/fw24_originals_shop_your_style_lookbook_plp_gallery_look_look_17_02_d_cee871f38c.png" alt="estilos"><h4>Estilo é arte</h4></div>
+
+    <div><img src="images/estilos/fw24_originals_shop_your_style_lookbook_plp_gallery_look_look_5_02_d_75dac950fc (2).png" alt="estilos"><h4>Estilo é arte</h4></div>
+    
+    </section>
+    <!--Termina aqui-->
+
+    <!--Entrada de alguns efeitos-->
+    <h1 class="xat" id="Outros">Venha Buscar a sua Alegria</h1>
+    <section class="texting">
+      <div>
+        <img src="images/imagnes_people/running_fw24_supernova_launch_ct_rise_d_03153f8f4c.jpg" alt="run">
+       <h4>Supernova Rise</h4>
+      </div>
+
+      <div class="t">
+        <p >A promessa de 13% a mais de suavidade deve realmente fazer a diferença <br> nas corridas diárias, proporcionando mais conforto e suporte. <br> Se você está pensando em melhorar seu equipamento de corrida,<br> esses novos Supernova podem ser <br>uma excelente escolha para dar aquele impulso extra no seu desempenho.</p>
+      </div>
+
+    </section>
+      <section class="texting">
+        
+        <div class="t">
+          <p>
+ O adidas LS 72 é inspirado nos designs de tênis da adidas dos anos 70, <br>uma era marcante para a marca,  quando começou a solidificar sua <br>presença no mundo dos esportes e da moda. <br> O "LS" em LS 72 pode referir-se a "Laufschuh," <br>que é uma palavra alemã para tênis de corrida, indicando seu foco <br> no desempenho e conforto para corredores.
+          </p>
+        </div>
+  
+        <div>
+          <img src="images/imagnes_people/fw24_sl_72_launch_hp_tc_d_58a47cf235.jpg" alt="run">
+         <h4>Adidas SL 72</h4>
+        </div>  
+    </section>
+
+    <section class="texting">
+      <div>
+        <img src="images/imagnes_people/y_3_fw24_chapter3_com_hp_ct_d_213e351094 (1).jpg" alt="run">
+       <h4>Y-3</h4>
+      </div>
+
+      <div class="t"><p>
+        
+          O Y-3 é uma colaboração entre a adidas e o designer japonês  <br>Yohji Yamamoto, conhecida por sua abordagem inovadora <br> e estética única. Lançada em 2002, a parceria entre a adidas e Yamamoto <br> combina a expertise da marca de esportes com o design <br> avant-garde do estilista. Aqui estão alguns detalhes <br> sobre a coleção e o que a torna especial:
+      </p>
+      </div>
+    </section>
+
+    
+    <section class="texting">
+        
+      <div class="t">
+        <p>
+          estilo casual é uma abordagem descontraída e confortável <br> para o vestuário, ideal para situações do dia a dia em que <br> a formalidade não é necessária. É uma forma de moda que <br> prioriza o conforto e a praticidade sem abrir mão do estilo. 
+        </p>
+      </div>
+
+      <div>
+        <img src="images/imagnes_people/Fall_Shop24_Loungewear_Teaser_Carousel_1050x1400_c303e48aa8.jpg" alt="run">
+       <h4>Estilo Casual</h4>
+      </div>  
+  </section>
+
+    
+    <section class="leonel">
+
+    </section> 
+  <!--Área do Comprar Produto-->
+    <h1 class="sba" id="comprar">Comprar o conforto</h1>
+    <section id="content">
+      <div class="mather">
+        <div class="son">
+          <img
+            id="img1"
+            src="images/Samba_OG_Shoes_Green_IE0872_01_standard.png"
+            alt="img"
+          />
+        </div>
+
+        <div class="sister">
+          <div>
+            <img
+              onclick="click1()"
+              id="imgs"
+              src="images/Samba_OG_Shoes_Green_IE0872_01_standard.png"
+              alt="img"
+            />
+          </div>
+          <div>
+            <img
+              onclick="click2()"
+              id="imgs"
+              src="images/Samba_OG_Shoes_Green_IE0872_06_standard.png"
+              alt="img"
+            />
+          </div>
+          <div>
+            <img
+              onclick="click3()"
+              id="imgs"
+              src="images/Samba_OG_Shoes_Green_IE0872_41_detail.png"
+              alt="img"
+            />
+          </div>
+          <div>
+            <img
+              onclick="click4()"
+              id="imgs"
+              src="images/Samba_OG_Shoes_Green_IE0872_42_detail.png"
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <!--Área do texto junto com as imagens do ultimo bloco-->
+      <div class="text">
+      
+        <div class="p">
+          <p>Adidas Apresenta</p>
+          <h1>Adidas Samba <br /></h1>
+
+          <p>
+            O modelo adidas Samba tornou-se um dos mais vendidos na história
+            <br />
+            As adidas Samba são versáteis e fáceis de estilizar, combinando
+            <br />perfeitamente com looks casuais ou desportivos. <br />
+            Para um visual moderno.
+          </p>
+
+          <div class="dolar">
+            <h1>$125</h1>
+            <span>50%</span>
+          </div>
+
+          <p id="desconto"><del>$500</del></p>
+
+          <div onclick="shopping()"  class="card">
+            <div><i  class="fa-solid fa-cart-shopping"></i>Add to Cart</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Área do Footer-->
+    <footer>
+  
+      <p>Desenvolvido por Ifraim Lutónadio Lopes&copy;  2024/2025</p>
+    </footer>
+    
+    <!--Link do Java Script-->
+    <img src="images/baixados-removebg-preview (3).png" id="adidas" alt="img">
     <script src="script.js"></script>
   </body>
 </html>
