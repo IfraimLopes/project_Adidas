@@ -102,13 +102,13 @@
 
   .stilos img {
     width: 100px;
-    height: 100px;
+    height: 200px;
     border-radius: 10px;
   }
 
   .stilos img:hover {
     width: 100px;
-    height: 100px;
+    height: 200px;
   }
 
   .texting {
