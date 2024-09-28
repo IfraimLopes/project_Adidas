@@ -259,6 +259,7 @@ h4 {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: nowrap;
   padding-top: 10px;
 }
 
