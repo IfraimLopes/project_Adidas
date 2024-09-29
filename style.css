@@ -48,13 +48,15 @@ body {
 header {
   border-bottom: 2px solid rgba(0, 0, 0, 0.281);
   position: fixed;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   background-color: #fff;
   color: black;
-  padding: 8px 0;
   font-family: "Inconsolata", monospace;
 }
 
@@ -90,6 +92,7 @@ nav a:hover {
   width: 60px;
   margin-bottom: -30px;
   height: 50px;
+  padding-left: 50px;
 }
 
 #fa:hover {
@@ -99,7 +102,6 @@ nav a:hover {
 .imgg {
   display: flex;
   align-items: center;
-  gap: 5px;
 }
 
 #img1 {
@@ -159,6 +161,13 @@ span {
   width: 220px;
   border-radius: 5px;
   transition: all ease 3ms;
+}
+
+.menu {
+  display: none;
+  color: black;
+  width: 100px;
+  height: 100px;
 }
 
 .card:hover {

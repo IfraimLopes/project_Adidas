@@ -1,8 +1,14 @@
 @media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   marquee {
-    height: 50vh;
+    height: 55vh;
     background-color: rgb(33, 33, 33);
-    width: 100%;
+    width: 80vh;
     margin-top: 66px;
   }
 
@@ -48,6 +54,15 @@
     height: 90px;
     transition: all ease-in 1s;
     border-radius: 30px;
+  }
+
+  .fa-bars {
+    padding-left: 123px;
+    margin-top: 20px;
+    color: black;
+    width: 300px;
+    height: 600px;
+    display: block;
   }
 
   #btn {
@@ -184,11 +199,19 @@
 
   header {
     display: flex;
-    flex-direction: column;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.281);
+    flex-direction: row;
     font-family: "Inconsolata", monospace;
     position: absolute;
-    width: 20vw;
+    width: 50vw;
+  }
+
+  header .fa-cart-shopping,
+  .fa-user {
+    display: none;
+  }
+
+  .imgg {
+    display: none;
   }
 
   header img {
@@ -213,5 +236,9 @@
 
   .sister {
     padding-left: 50px;
+  }
+
+  .menu {
+    display: block;
   }
 }
