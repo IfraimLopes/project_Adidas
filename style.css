@@ -46,7 +46,6 @@ body {
 }
 
 header {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.281);
   position: fixed;
   display: flex;
   justify-content: space-around;

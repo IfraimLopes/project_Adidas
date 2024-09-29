@@ -9,7 +9,7 @@
     height: 55vh;
     background-color: rgb(33, 33, 33);
     width: 100%;
-    margin-top: 66px;
+    margin-top: 100px;
   }
 
   #tex {
@@ -57,8 +57,6 @@
   }
 
   .fa-bars {
-    opacity: 1;
-    padding-left: 123px;
     margin-top: 20px;
     color: black;
     width: 300px;
@@ -167,6 +165,12 @@
     padding: 30px 50px;
   }
 
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #img1 {
     width: 220px;
     height: 180px;
@@ -195,15 +199,25 @@
 
   nav {
     display: flex;
-    flex-direction: column;
+    text-align: center;
+    margin-top: -10px;
+    margin-right: -227px;
+    flex-direction: row;
   }
 
   header {
     display: flex;
-    flex-direction: row;
+    text-align: center;
+    flex-direction: column;
     font-family: "Inconsolata", monospace;
-    position: absolute;
     width: 50vw;
+    position: absolute;
+  }
+
+  header img {
+    display: flex;
+    margin: auto;
+    margin-right: 4px;
   }
 
   header .fa-cart-shopping,
@@ -213,10 +227,6 @@
 
   .imgg {
     display: none;
-  }
-
-  header img {
-    margin: auto;
   }
 
   .card {
@@ -230,9 +240,8 @@
     transition: all ease 3ms;
   }
 
-  ul,
-  i {
-    display: none;
+  ul {
+    display: block;
   }
 
   .sister {
