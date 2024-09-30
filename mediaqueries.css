@@ -196,10 +196,13 @@
     flex-wrap: nowrap;
     text-align: center;
     margin-top: -10px;
-    margin-right: -190px;
+    gap: 0px;
     flex-direction: row;
     padding: 0px 0px;
-    background-color: brown;
+  }
+
+  .Outros {
+    display: none;
   }
 
   header {
